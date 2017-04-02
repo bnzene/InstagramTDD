@@ -7,14 +7,14 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    @post = current_user.posts.build
   end
 
   def create
-    @post = Post.create(post_params)
+    @post = current_user.posts.build(post_params)
     if @post.save
       flash[:success] = "Your post has been created."
-      redirect_to @post
+      redirect_to posts_path
     else
       flash[:alert] = "Halt, you fiend! You need an image to post here!"
       render :new
