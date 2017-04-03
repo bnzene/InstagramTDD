@@ -6,6 +6,54 @@ body {
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
+.registration-bg {
+  padding-top: 4em;
+  height: 100%;
+  background-image: image-url('signupbg1.jpg');
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.log-in {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: none;
+}
+
+.panel {
+  border-radius: 8px;
+}
+
+.panel-heading {
+  h1 {
+    text-align: center;
+  }
+}
+
+.login-bg {
+    padding-top: 4em;
+    height: 100%;
+    background-image: image-url('loginbg.jpg');
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.alert {
+  margin-bottom: 0px;
+}
 /* ## NAVBAR CUSTOMISATIONS ## */
 
 .navbar-brand {
@@ -128,7 +176,7 @@ body {
 /* ## Wrapper and styling for the new and edit views ## */
 
 .form-wrapper {
-  width: 60%;
+  width: 30%;
   margin: 20px auto;
   background-color: #fff;
   padding: 40px;
@@ -139,4 +187,13 @@ body {
 .edit-links {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+#image-preview {
+  margin: 0px auto;
+}
+
+#post_image {
+  padding: 1em;
+  margin: 0px auto;
 }
